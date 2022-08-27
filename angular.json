@@ -15,6 +15,7 @@
       "prefix": "app",
       "architect": {
         "build": {
+          "allowedCommonJsDependencies": ["@mapbox/mapbox-gl-geocoder"],
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/mapas-app-v2",
@@ -37,7 +38,7 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumError": "3mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -101,5 +102,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "6e6c9c00-51ca-426a-a6d7-2e92d76b34d6"
   }
 }
